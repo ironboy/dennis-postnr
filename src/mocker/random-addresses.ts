@@ -1,4 +1,4 @@
-import data from './data.gzip?inline';
+import data from './data.gzip.base64?inline';
 import pako from 'pako';
 
 console.log(data);
