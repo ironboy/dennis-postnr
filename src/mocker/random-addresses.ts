@@ -1,14 +1,6 @@
-import data from './data.brotli?inline';
-import brotliPromise from 'brotli-wasm';
-const brotli = await brotliPromise;
+import data from './data.gzip?inline';
+import pako from 'pako';
 
-let a = brotli.decompress(data);
 
-console.log(a)
-
-/*const { addresses, firstNamesMale, firstNamesFemale, lastNames } = JSON.parse(
-  Buffer.from(
-    brotli.decompress(data)
-    )
-  ).toString('utf-8')
-);*/
+let h = pako.inflate(data);
+console.log(h);

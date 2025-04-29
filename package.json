@@ -12,5 +12,8 @@
     "typescript": "~5.7.2",
     "vite": "^6.3.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "node-gzip": "^1.1.2",
+    "pako": "^2.1.0"
+  }
 }
