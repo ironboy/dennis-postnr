@@ -1,8 +1,3 @@
-import data from './data.gzip.base64?raw';
-import pako from 'pako';
+import data from './data.json';
 
-let encoder = new TextEncoder();
-encoder.encode;
-
-
-let h = pako.inflate(encoder.encode(atob(data)));
+console.log(data);
