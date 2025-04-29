@@ -1,7 +1,7 @@
-import data from './data.gzip?raw';
+import data from './data.gzip?inline';
 import pako from 'pako';
 
 console.log(data);
 
-//let h = pako.inflate(data);
-//console.log(h);
+let h = pako.inflate(data);
+console.log(h);
